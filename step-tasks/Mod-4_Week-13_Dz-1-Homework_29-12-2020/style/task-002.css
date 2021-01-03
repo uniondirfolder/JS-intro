@@ -1,0 +1,227 @@
+/* стили для элемента body */
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #fff;
+    height: 3000px;
+}
+
+/* стили основного контейнера слайдера */
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* стили для обёртки, в которой заключены слайды */
+
+.slider__wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* стили для контейнера слайдов */
+
+.slider__items {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+/* стили для слайдов */
+
+.slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* стили для кнопок "вперед" и "назад" */
+
+.slider__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slider__control:hover, .slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+}
+
+.slider__control_prev {
+    left: 0;
+}
+
+.slider__control_next {
+    right: 0;
+}
+
+.slider__control::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control_prev::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_next::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* стили для индикаторов */
+
+.slider__indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0 15%;
+    list-style: none;
+}
+
+.slider__indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 4px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.slider__indicators li.active {
+    background-color: #fff;
+}
+
+/*VERSION for itstep*/
+
+.slider__itstep {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 1), -23px 0 20px -23px rgba(0, 0, 0, .8), 23px 0 20px -23px rgba(0, 0, 0, .8), 0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+.slider__itstep__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slider__itstep__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.slider__itstep__control {
+    position: absolute;
+    top: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .5);
+}
+
+.slider__itstep__control_show {
+    display: flex;
+}
+
+.slider__itstep__control:hover, .slider__itstep__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.slider__itstep__control_left {
+    left: 0;
+}
+
+.slider__itstep__control_right {
+    right: 0;
+}
+
+.slider__itstep__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__itstep__control_left::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__itstep__control_right::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__itstep__item>div {
+    line-height: 250px;
+    font-size: 100px;
+    text-align: center;
+}
+
+/*itstep v2*/
+
+.slider_itstep_v2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 400px;
+    margin: 50px 0 0 12px;
+    border: 1px;
+    border: 2px dotted;
+    border: medium dashed green;
+}
+
+.pic {
+    width: 325px;
+    height: 325px;
+    margin: 0px 80px 0px 80px;
+    background-image: url('../image/HTML.png');
+}
+
+.left, .right {
+    font-size: 48px;
+    color: lightslategrey;
+}
+
+.left {
+    opacity: 0.3;
+}

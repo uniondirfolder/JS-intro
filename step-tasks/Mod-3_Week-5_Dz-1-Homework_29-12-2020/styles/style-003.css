@@ -1,0 +1,33 @@
+
+#field {
+    width: 1920px;
+    height: 969px;
+    border: 10px solid black;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: url(../image/task-003-field.jpg) 100% 100% no-repeat;
+    background-size: cover;
+  }
+
+  #inner__field{
+    width: 100px;
+    height: 100px;
+    margin-left: 87px;
+    margin-top: 46px;
+    padding-top: 775px;
+    padding-left: 1645px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+  }
+  #ball {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    transition: all 1s;
+    
+  }

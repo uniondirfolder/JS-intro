@@ -1,0 +1,23 @@
+main {
+    width: max-content;
+    height: max-content;
+    margin: auto auto;
+    background-color: burlywood;
+}
+
+#password__length {
+    width: 3rem;
+}
+
+#btn__generate__password {
+    margin: 1rem auto;
+    width: 10rem;
+    display: block;
+    font-size: 1.2rem;
+}
+
+#generate__result {
+    width: 20rem;
+    padding: .2rem .3rem;
+    font-size: 1rem;
+}

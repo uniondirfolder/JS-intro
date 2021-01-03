@@ -1,0 +1,17 @@
+#forms {
+    width: 320px;
+    height: 50px;
+    background-color: bisque;
+    padding: 3px;
+}
+
+#username {
+    width: 260px;
+    margin-left: 20px;
+    padding: 3px;
+}
+
+label {
+    margin-left: 20px;
+    padding: 3px;
+}

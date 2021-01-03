@@ -1,0 +1,22 @@
+.action {
+    display: block;
+    width: 700px;
+    margin: 50px 0 0 12px;
+}
+
+.title {
+    background-color: #518CBB;
+    margin: 0;
+    color: white;
+    line-height: 32px;
+    border: 1px solid black;
+}
+
+.text {
+    margin: 0;
+    background-color: #B5DCE9;
+}
+
+.none {
+    display: none;
+}

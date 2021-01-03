@@ -1,0 +1,68 @@
+:root {
+    overflow: hidden;
+    --input-separator-size: .5rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+aside {
+    float: left;
+}
+
+#left__panel, #right__panel {
+    height: 100%;
+}
+
+#blue__section, #pink__section, #green__section, #orange__section {
+    width: 100%;
+}
+
+#blue__section {
+    background-color: blue;
+}
+
+#pink__section {
+    background-color: pink;
+}
+
+#green__section {
+    background-color: green;
+}
+
+#orange__section {
+    background-color: orange;
+}
+
+.separator {
+    background-color: lightgray;
+    font-size: 2rem;
+    font-weight: bold;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.separator-vertical {
+    width: var(--input-separator-size);
+    cursor: pointer;
+    height: 100%;
+}
+
+.separator-vertical>p {
+    position: absolute;
+    margin-left: -.1rem;
+    top: 45%;
+}
+
+.separator-horizontal {
+    height: var(--input-separator-size);
+    cursor: row-resize;
+}
+
+.separator-horizontal>p {
+    position: absolute;
+    margin-top: -.95rem;
+}

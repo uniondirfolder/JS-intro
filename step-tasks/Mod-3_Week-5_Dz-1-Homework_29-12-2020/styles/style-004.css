@@ -1,0 +1,55 @@
+#colorBlock{
+    display: flex;
+    flex-direction: row;
+    background-color: cornflowerblue;
+    width: 410px;
+    height: 120px;
+}
+#threeColor {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid darkgray;
+    border-radius: 20px;
+    width: 280px;
+    height: 95px;
+    background-color: azure;
+    margin: auto;
+}
+
+#red { 
+    border-radius: 40px;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    background-color: red;
+}
+
+#yellow {
+    border-radius: 40px;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    background-color: darkgray;
+}
+
+#green {
+    border-radius: 40px;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    background-color: darkgray;
+
+}
+
+button{
+    width: 75px;
+    height: 75px;
+    border-radius:15px;
+    font-size: 24px;
+    margin: auto;
+    box-shadow: blanchedalmond;
+}
+
+button, button:visited, button:focus, button:active, button:hover{
+    outline:0 none !important;
+}

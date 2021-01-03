@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/task-002.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    
+    <title>TASK 2</title>
+</head>
+
+<body>
+
+    <!--itstep v2-->
+    <div class="slider_itstep_v2">
+        <aside class="left">
+            <i class="fas fa-angle-double-left"></i>
+        </aside>
+        <div class="pic" data-num="0"></div>
+        <aside class="right">
+            <i class="fas fa-angle-double-right"></i>
+        </aside>
+    </div>
+    <script src="../script/task-002.js"></script>
+    <br>
+    <hr>
+    
+    <div class="slider">
+        <div class="slider__wrapper">
+            <div class="slider__items">
+                <div class="slider__item">
+                    <div style="height: 250px; background: orange;"></div>
+                </div>
+                <div class="slider__item">
+                    <div style="height: 250px; background: green;"></div>
+                </div>
+                <div class="slider__item">
+                    <div style="height: 250px; background: violet;"></div>
+                </div>
+                <div class="slider__item">
+                    <div style="height: 250px; background: coral;"></div>
+                </div>
+            </div>
+        </div>
+        <a class="slider__control slider__control_prev" href="#" role="button"></a>
+        <a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
+    </div>
+    <script>
+        slideShow('.slider', {
+            isAutoplay: true
+        });
+
+    </script>
+    <br>
+    <hr>
+    <!--itstep task-->
+    <div style="width: 811px;  height: 316px; margin-left: 15%;">
+        <div id="itstep__task__002">
+            <div class="slider__itstep">
+                <div class="slider__itstep__wrapper">
+                    <div class="slider__itstep__item">
+                        <div style="height: 250px; background-image: url('../image/image-01.jpg'); ">1</div>
+                    </div>
+                    <div class="slider__itstep__item">
+                        <div style="height: 250px; background-image: url('../image/image-02.jpg');">2</div>
+                    </div>
+                    <div class="slider__itstep__item">
+                        <div style="height: 250px; background-image: url('../image/image-03.jpg');">3</div>
+                    </div>
+                    <div class="slider__itstep__item">
+                        <div style="height: 250px; background-image: url('../image/image-04.jpg');">4</div>
+                    </div>
+                </div>
+                <a class="slider__itstep__control slider__itstep__control_left" href="#" role="button"></a>
+                <a class="slider__itstep__control slider__itstep__control_right slider__itstep__control_show" href="#"
+                    role="button"></a>
+            </div>
+            <script>
+                let slider = multiItemSlider_Itstep('.slider__itstep')
+            </script>
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>

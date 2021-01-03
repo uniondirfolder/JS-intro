@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-task-001.css">
+    <title>Task 1</title>
+</head>
+
+<body>
+    <main>
+        <h1>Random String Generator</h1>
+        <div>
+            <div>String should be <input id="password__length" type="number" required min="1"> charecters length</div>
+
+            <p>Which characters are allowed to occur in the string?</p>
+
+            <div class="check-box-container">
+                <div>
+                    <input id="numeric__check" name="numeric-check" type="checkbox">
+                    <label for="numeric__check">Numeric digits (0-9)</label>
+                </div>
+                <div>
+                    <input id="uppercase__letter__check" name="uppercase-letter-check" type="checkbox">
+                    <label for="uppercase__letter__check">Uppercase letters (A-Z)</label>
+                </div>
+                <div>
+                    <input id="lowercase__letter__check" name="lowercase-letter-check" type="checkbox">
+                    <label for="lowercase__letter__check">Numeric digits (0-9)</label>
+                </div>
+            </div>
+
+            <button id="btn__generate__password" style="display: none;">Generate</button>
+
+            <hr>
+
+            <div>
+                <input id="generate__result" name="generate-result" type="text">
+                <label for="generate__result"><b>Result</b></label>
+            </div>
+        </div>
+    </main>
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="task-001.js"></script>
+</body>
+
+</html>

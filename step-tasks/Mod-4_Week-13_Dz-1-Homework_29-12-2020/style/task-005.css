@@ -1,0 +1,33 @@
+#box_calendar{
+    max-width: 300px;
+    max-height: 300px;
+    background-color: rgb(221, 164, 143);
+    
+}
+
+.date{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+label{flex-basis: 32%;}
+
+.btn_Generate{
+    flex-basis: 90%;
+    margin-top: 10px;
+}
+
+input{width: 60px;}
+
+.show_table{
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+td, th{
+    border: 1px solid black;
+    width: 45px;
+    height: 25px;
+    text-align: center;
+}
